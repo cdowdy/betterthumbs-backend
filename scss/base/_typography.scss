@@ -1,0 +1,36 @@
+// Lets Use Harry Roberts Typset instead of setting all these ourselves.
+// https://github.com/csswizardry/typecsset
+//
+
+.heading {
+  border-bottom: 1px solid $border-hr-color;
+}
+.subheading {
+  color: lighten( $font-color, 5);
+  //font-size: rem-calc(26);
+  margin-top: 1em;
+}
+
+h2.subheading {
+  font-size: rem-calc(26);
+}
+
+h3.subheading {
+  font-size: rem-calc(22);
+}
+
+h4.subheading {
+  font-size: rem-calc(20);
+}
+
+
+hr {
+  clear: both;
+  max-width: 75rem;
+  height: 0;
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0;
+}

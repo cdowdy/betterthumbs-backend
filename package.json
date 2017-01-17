@@ -1,0 +1,31 @@
+{
+  "name": "bolt-ext-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^2.3.1",
+    "gulp-uncss": "^1.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-uncss": "^1.0.6",
+    "sanitize.css": "^4.1.0"
+  }
+}

@@ -1,0 +1,64 @@
+.ext-docs-header-container {
+  padding: rem-calc(15);
+  @include clearfix;
+}
+
+//.ext-docs-header {
+//  display: flex; /* 1 */
+//  flex-wrap: wrap; /* 2 */
+//  margin: -0.5em; /* 5 (edit me!) */
+//}
+
+.ext-docs-header {
+  display: block;
+  float: left;
+}
+
+.ext-docs-header-title {
+  width: 100%;
+  float: left;
+  @media screen and (min-width: 50em) {
+    width: 50%;
+  }
+
+  h1,h2,a {
+    color: #fff;
+  }
+
+  a {
+    &:hover, &:focus {
+      color: $boltblue-link-hover;
+    }
+  }
+}
+
+//.ext-docs-header > * {
+//  flex: 1 0 5em; /* 3 (edit me!) */
+//  margin: 0.5em; /* 4 (edit me!) */
+//}
+// main header
+.ext-docs-masthead {
+  background-color: $boltblue;
+  //padding: 0 1em;
+  text-align: center;
+
+  //h1,a {
+  //  color: #fff;
+  //}
+
+  //ul {
+  //  list-style: none;
+  //
+  //  li {
+  //    padding: 1em;
+  //  }
+  //}
+}
+
+//.ext-docs-masthead {
+//  a {
+//    &:hover, &:focus {
+//      color: $boltblue-link-hover;
+//    }
+//  }
+//}

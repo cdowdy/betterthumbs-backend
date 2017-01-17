@@ -1,0 +1,80 @@
+.ext-docs-card {
+  background-color: $card-bg;
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  padding: rem-calc(20);
+  margin-bottom: rem-calc(10);
+  width: 100%;
+  @media screen and (min-width: 50em) {
+    max-width: 80%;
+  }
+}
+
+
+.ext-docs-card  ul,
+.ext-docs-card ol {
+  margin-left: rem-calc(16);
+}
+
+.cached-image-data {
+  list-style: none;
+  font-size: rem-calc(14);
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+}
+
+.prime-cache-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.betterthumbs-card,
+%prime-card {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 2px;
+  background: $bg-color;
+  overflow: hidden;
+  color: #0a0a0a;
+  font-size: rem-calc(14);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.betterthumbs-card-list,
+%prime-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+//.betterthumbs-card > :last-child {
+//  margin-bottom: 0;
+//}
+
+.betterthumbs-card-divider,
+%prime-card-divider {
+  padding: 1rem;
+  background: $boltblue;
+  color: $bg-color;
+
+   > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.betterthumbs-card-section ,
+%prime-card-section {
+  padding: 1rem;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+

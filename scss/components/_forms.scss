@@ -1,0 +1,9 @@
+.fieldset {
+  //margin: rem-calc(18) 0;
+  padding: rem-calc(18);
+  //border-bottom: 1px solid #cacaca;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #cacaca;
+  }
+}

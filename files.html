@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bolt Extension Files</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="prod/docs.css">-->
+    <!-- for jquery test out delete (ajax) functions -->
+    <!--<script-->
+            <!--src="https://code.jquery.com/jquery-2.2.4.min.js"-->
+            <!--integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
+            <!--crossorigin="anonymous"></script>-->
+</head>
+<body>
+<header class="ext-docs-masthead ext-docs-header-container ">
+    <div class="ext-docs-header-title">
+        <h1><a href="#boltadmin">Bolt Admin</a></h1>
+    </div>
+    <div class="ext-docs-header-title">
+        <h2>BetterThumbs Files</h2>
+    </div>
+</header>
+<main>
+
+<div class="ext-docs-grid-container">
+    <div class="small-12 medium-6 column column-blocks">
+        <h1 class="heading">Delete All Images</h1>
+        <p>
+            This will remove all images from the BetterThumbs Cache
+        </p>
+        <button type="button" data-all="{{ path|json_encode }}"
+                class="button delete-all">Delete All Images </button>
+    </div>
+    <div class="small-12 medium-6 column column-blocks">
+        <h1 class="heading">Prime The Image Cache</h1>
+        <p>
+            This will "prime" (create images) and place them in the cache.
+        </p>
+        <!--<button type="button" data-all="{{ path|json_encode }}"-->
+                <!--class="button prime-cache">Prime</button>-->
+        <a href="/prime.html">Go To The Prime Cache Page</a>
+    </div>
+</div>
+
+    <div class="ext-docs-grid-container">
+  <div class="small-12 column column-block">
+      <h1 class="heading">Delete An Image From Cache</h1>
+  </div>
+
+
+
+
+    <div id="image-grid"
+         class="small-up-1 medium-up-2 large-up-3" data-equalizer>
+
+        <div id="cachedImage-garden-gardening-grass-589.jpg" class="column column-block image-container"  >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>garden-gardening-grass.jpg</p>-->
+            <!--</div>-->
+            <div class="betterthumbs-card">
+                <div class="img-container">
+                    <img id="garden-gardening-grass-589.jpg-1"
+                         class="image-to-delete"
+                         src="/img/garden-gardening-grass-589.jpg"
+                         alt="{{ p }}">
+                </div>
+               <div class="betterthumbs-card-section">
+                   <ul class="betterthumbs-card-list">
+                       <li class="cached-image-name"><strong>Name: </strong>garden-gardening-grass-589</li>
+                       <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                       <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                   </ul>
+                   <button class="button deletebutton" type="button" id="garden-gardening-grass-589.jpg">
+                       Delete Image
+                   </button>
+               </div>
+            </div>
+        </div>
+
+        <div id="cachedImage-alarm-clock-gold-hands-of-a-clock-1778.jpg"
+             class="column column-block image-container" >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>alarm-clock-gold-hands-of-a-clock-1778.jpg</p>-->
+            <!--</div>-->
+           <div class="betterthumbs-card">
+               <div class="img-container">
+                   <img id="alarm-clock-gold-hands-of-a-clock-1778.jpg-1"
+                        class="image-to-delete"
+                        src="/img/alarm-clock-gold-hands-of-a-clock-1778.jpg"
+                        alt="{{ p }}">
+               </div>
+              <div class="betterthumbs-card-section">
+                  <ul class="betterthumbs-card-list">
+                      <li class="cached-image-name"><strong>Name: </strong>alarm-clock-gold-hands-of-a-clock-1778</li>
+                      <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                      <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                  </ul>
+                  <button class="button deletebutton" type="button" id="alarm-clock-gold-hands-of-a-clock-1778.jpg">
+                      Delete Image
+                  </button>
+              </div>
+           </div>
+        </div>
+
+        <div id="cachedImage-apple-desk-iphone-2750.jpg" class="column column-block image-container" >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>apple-desk-iphone-2750.jpg</p>-->
+            <!--</div>-->
+            <div class="betterthumbs-card">
+                <div class="img-container">
+                    <img id="apple-desk-iphone-2750.jpg-1"
+                         class="image-to-delete"
+                         src="/img/apple-desk-iphone-2750.jpg"
+                         alt="{{ p }}">
+                </div>
+              <div class="betterthumbs-card-section">
+                  <ul class="betterthumbs-card-list">
+                      <li class="cached-image-name"><strong>Name: </strong>apple-desk-iphone-2750</li>
+                      <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                      <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                  </ul>
+                  <button class="button deletebutton" type="button" id="apple-desk-iphone-2750.jpg">
+                      Delete Image
+                  </button>
+              </div>
+            </div>
+        </div>
+        <div id="cachedImage-carrot-cooking-eat-1398.jpg" class="column column-block image-container" >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>carrot-cooking-eat-1398.jpg</p>-->
+            <!--</div>-->
+            <div class="betterthumbs-card">
+                <div class="img-container">
+                    <img id="carrot-cooking-eat-1398.jpg-1"
+                         class="image-to-delete"
+                         src="/img/carrot-cooking-eat-1398.jpg"
+                         alt="{{ p }}">
+                </div>
+               <div class="betterthumbs-card-section">
+                   <ul class="betterthumbs-card-list">
+                       <li class="cached-image-name"><strong>Name: </strong>carrot-cooking-eat-1398</li>
+                       <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                       <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                   </ul>
+                   <button class="button deletebutton" type="button" id="carrot-cooking-eat-1398.jpg">
+                       Delete Image
+                   </button>
+               </div>
+            </div>
+        </div>
+
+        <div id="cachedImage-city-jeffrey-swanson.jpg" class="column column-block image-container" >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>city-jeffrey-swanson.jpg</p>-->
+            <!--</div>-->
+            <div class="betterthumbs-card">
+               <div class="img-container">
+                   <img id="city-jeffrey-swanson.jpg-1"
+                        class="image-to-delete"
+                        src="/img/city-jeffrey-swanson.jpg"
+                        alt="{{ p }}">
+               </div>
+               <div class="betterthumbs-card-section">
+                   <ul class="betterthumbs-card-list">
+                       <li class="cached-image-name"><strong>Name: </strong>city-jeffrey-swanson</li>
+                       <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                       <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                   </ul>
+                   <button class="button deletebutton" type="button" id="city-jeffrey-swanson.jpg">
+                       Delete Image
+                   </button>
+               </div>
+            </div>
+        </div>
+        <div id="cachedImage-food-fruit-orange-1286.jpg" class="column column-block image-container" >
+            <!--<div class="cached-image&#45;&#45;header">-->
+                <!--<p>food-fruit-orange-1286.jpgg</p>-->
+            <!--</div>-->
+           <div class="betterthumbs-card">
+               <div class="img-container">
+                   <img id="food-fruit-orange-1286.jpg-1"
+                        class="image-to-delete"
+                        src="/img/food-fruit-orange-1286.jpg"
+                        alt="{{ p }}">
+               </div>
+            <div class="betterthumbs-card-section">
+                <ul class="betterthumbs-card-list">
+                    <li class="cached-image-name"><strong>Name: </strong>food-fruit-orange-1286</li>
+                    <li class="cached-image-total-size"><strong>File Size: </strong>2.4MB</li>
+                    <li class="cached-image-last-modificed"><strong>Last-Modified: </strong>Tue, 10 May 2016 13:05:48 GMT </li>
+                </ul>
+                <button class="button deletebutton" type="button" id="food-fruit-orange-1286.jpg">
+                    Delete Image
+                </button>
+            </div>
+           </div>
+        </div>
+        <!--<div id="cachedImage-keyboard-old-technology-2318.jpg" class="column column-block image-container" >-->
+
+            <!--<img id="keyboard-old-technology-2318.jpg-1"-->
+                 <!--class="image-to-delete"-->
+                 <!--src="/img/keyboard-old-technology-2318.jpg"-->
+                 <!--width="200"-->
+                 <!--alt="{{ p }}">-->
+            <!--<button class="button deletebutton" type="button" id="keyboard-old-technology-2318.jpg">-->
+                <!--Delete Image-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div id="cachedImage-building-frame-garage-1599.jpg" class="column column-block image-container" >-->
+
+            <!--<img id="building-frame-garage-1599.jpg-1"-->
+                 <!--class="image-to-delete"-->
+                 <!--src="/img/building-frame-garage-1599.jpg"-->
+                 <!--width="200"-->
+                 <!--alt="{{ p }}">-->
+            <!--<button class="button deletebutton" type="button" id="building-frame-garage-1599.jpg">-->
+                <!--Delete Image-->
+            <!--</button>-->
+        <!--</div>-->
+
+    </div>
+<!--
+    <div class="small-12 small-centered  flex-grid--items">
+        <h1 class="heading">No Images Found In The Better Thumbs Cache...</h1>
+    </div>
+-->
+    </div>
+</main>
+<!--<script src="bower_components/jquery/dist/jquery.min.js"> </script>
+<script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+<script src="bower_components/foundation-sites/dist/plugins/foundation.equalizer.js"></script>
+<script>
+    $(document).foundation();
+</script>-->
+</body>
+</html>

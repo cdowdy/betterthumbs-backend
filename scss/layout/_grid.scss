@@ -1,0 +1,40 @@
+
+.ext-docs-grid-container {
+  @include clearfix;
+  width: auto;
+  max-width: $container-width;
+  //display: block;
+  padding: rem-calc(15);
+  margin: 0 auto;
+}
+
+.ext-docs-content {
+  width: 100%;
+  float: left;
+  display: block;
+  padding-left: rem-calc(10);
+  padding-right: rem-calc(10);
+  @media screen and (min-width: 50em) {
+    width: 75%;
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+  }
+}
+
+//.flex-container {
+//  max-width: $container-width;
+//}
+//
+//.flex-grid {
+//  display: flex; /* 1 */
+//  flex-wrap: wrap; /* 2 */
+//  justify-content: space-between;
+//  max-width: $container-width;
+//  overflow: hidden;
+//}
+//
+//.flex-grid--item {
+//  width: 22%;
+//  display: flex;
+//  flex-direction: column;
+//}

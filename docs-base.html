@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bolt Extension Docs BoilerPlate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- for code block highlighting -->
+    <!--<link rel="stylesheet" href="css/prism.css">-->
+</head>
+<body>
+<header class="ext-docs-masthead ext-docs-header-container ">
+    <div class="ext-docs-header-title">
+        <h1><a href="{{paths.bolt}}">Bolt Admin</a></h1>
+    </div>
+    <div class="ext-docs-header-title">
+        <h2>{{ Your Extension Name }} Docs</h2>
+    </div>
+</header><!-- /.ext-docs-masthead -->
+
+<main class="ext-docs-grid-container">
+    <!-- the docs navigation left sidebar on desktop full width small screen under 800px -->
+    <nav class="ext-docs-navigation-container">
+        <ul class="ext-docs-navigation-menu">
+            <li class="ext-docs-navigation-menu--item">
+                <a href="#your_target1">First Doc Link</a>
+            </li>
+            <li class="ext-docs-navigation-menu--item">
+                <a href="#second">Second Doc Link</a>
+            </li>
+            <li class="ext-docs-navigation-menu--item">
+                <a href="#third">Third Doc Link</a>
+            </li>
+            <li class="ext-docs-navigation-menu--item">
+                <a href="https://github.com/cdowdy/bolt-extension-docs">Back To Ext Docs Repo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main docs content -->
+    <div class="ext-docs-content">
+        <section id="your_target1">
+            <h1 class="heading">First Doc Section</h1>
+            <p>
+                Lorem Khaled Ipsum is a major key to success. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Congratulations, you played yourself. Give thanks to the most high. Cloth talk.We don’t see them, we will never see them. Lion! The key is to drink coconut, fresh coconut, trust me. To succeed you must believe. When you believe, you will succeed. They don’t want us to eat. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast
+            </p>
+            <div class="ext-docs-card">
+                <p>this is a card. can have text or an (un)ordered list</p>
+                <ul>
+                    <li>To succeed you must believe. When you believe, you will succeed</li>
+                    <li>You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like
+                        getting a haircut, stay fresh
+                    </li>
+                    <li>In life you have to take the trash out, if you have trash in your life, take it out, throw it
+                        away, get rid of it, major key
+                    </li>
+                    <li>It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean</li>
+                </ul>
+            </div>
+            <h2 class="subheading">Sub Category</h2>
+            <p>code example blocks</p>
+            <pre class="language-yaml"><code>#Yaml:
+database:
+    driver: sqlite
+    databasename: bolt
+</code></pre>
+        </section> <!-- /#your_target1 -->
+        <section id="second">
+            <h1 class="heading">Second Section</h1>
+            <p>
+                We don’t see them, we will never see them. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion!
+            </p>
+            <p>
+                The section below uses the  <code>details</code> element.
+            </p>
+            <details>
+                <summary>In life there will be road blocks but we will over come it. Bless up. </summary>
+                <p>The key to more success is to get a massage once a week, very important, major key, cloth talk. They will try to close the door on you, just open it. Surround yourself with angels. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. In life there will be road blocks but we will over come it. Give thanks to the most high. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat.</p>
+            </details>
+        </section>
+        <!-- /#second -->
+
+        <section id="third">
+            <h1 class="heading">Another Docs Section</h1>
+            <p>
+                The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Special cloth alert. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.
+            </p>
+            <pre class="language-twig"><code>&lt;div class='imageholder-wide'&gt;
+  &lt;img src="{{ record.image|thumbnail(320, 240) }}"&gt;
+&lt;/div&gt;</code></pre>
+
+            <p>
+                Code Block in a details element
+            </p>
+            <details>
+                <summary>See Code Example</summary>
+                <pre class="language-twig"><code>% set text = "Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. To succeed you must believe. When you believe, you will succeed. The key is to drink coconut, fresh coconut, trust me." %}
+{{ text|excerpt(25) }}</code></pre>
+            </details>
+        </section>
+        <!-- /#third -->
+
+    </div>
+
+</main>
+
+<!-- for code block highlighting -->
+<!--<script src="js/prism.js"></script>-->
+</body>
+</html>
